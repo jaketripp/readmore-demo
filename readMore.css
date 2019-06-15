@@ -1,0 +1,33 @@
+.section {
+  text-align: right;
+}
+
+button {
+  color: #B3B3B3;
+  -webkit-text-fill-color: #B3B3B3;
+  font-weight: bold;
+  border: 2px solid;
+  border-radius: none;
+  padding: 8px 12px;
+  margin: 8px;
+  outline: none;
+}
+
+.content {
+  line-height: 1em;
+  transition: height .3s ease-in-out;
+  overflow: hidden;
+  color: black;
+  text-align: left;
+}
+
+.content.canExpand {
+  background-image: linear-gradient(to bottom right,black 45%,rgba(0,0,0,0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content.expanded {
+  background-image: none;
+  -webkit-text-fill-color: black;
+}
